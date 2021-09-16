@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import { connect } from 'react-redux'
 
-function App() {
+function App(props) {
+  console.log(props.store)
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        {props.x}
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -22,4 +25,11 @@ function App() {
   );
 }
 
-export default App;
+let mapStateToPropa = (state)=>{
+  return{
+    x:state.noOflaptop
+  }
+}
+let mapDispatchToPropa = ()=>{}
+export default connect(mapStateToPropa,mapDispatchToPropa)(App);
+ 
