@@ -1,0 +1,4 @@
+const SELL_LAPTOP = "SELL_LAPTOP"
+const BUY_LAPTOP = "BUY_LAPTOP"
+
+module.exports = { SELL_LAPTOP, BUY_LAPTOP }
