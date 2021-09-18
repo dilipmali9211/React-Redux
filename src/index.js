@@ -7,7 +7,6 @@ import reportWebVitals from './reportWebVitals';
 import { buynewlatop } from './Redux/ActionCreator';
 import { rootReducer } from './Redux/RootReducer';
 
-const redux = require('redux')
 const createStore = require('redux').createStore
 const mystore = createStore(rootReducer)
 
