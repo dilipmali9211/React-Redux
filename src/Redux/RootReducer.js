@@ -7,7 +7,7 @@ let initalstate = {
     noOflaptop: 10
 }
 
-const rootReducer = (state = initalstate, action) => {
+export const rootReducer = (state = initalstate, action) => {
     switch (action.type) {
         case BUY_LAPTOP:
             return {
@@ -23,4 +23,4 @@ const rootReducer = (state = initalstate, action) => {
     }
 }
 
-module.exports = rootReducer;
+//module.exports = rootReducer;

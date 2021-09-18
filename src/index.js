@@ -5,7 +5,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { buynewlatop } from './Redux/ActionCreator';
-import {rootReducer} from './Redux/RootReducer';
+import { rootReducer } from './Redux/RootReducer';
 
 const redux = require('redux')
 const createStore = require('redux').createStore
