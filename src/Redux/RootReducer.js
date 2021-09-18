@@ -20,6 +20,8 @@ export const rootReducer = (state = initalstate, action) => {
                 ...state,
                 noOflaptop:( state.noOflaptop <1)?  state.noOflaptop: state.noOflaptop - 1
             }
+        default:
+            return state;
     }
 }
 
